@@ -1815,7 +1815,7 @@
                     <h3 class="subsection-title">Store Scale Assessment</h3>
                     <div class="tier-badge">
                         <span class="tier-label">Tier 2–3: Growth to Scale (estimated 30K–80K sessions/month)</span>
-                        <span class="tier-sessions">Estimated ~30,000–80,000 sessions/month (estimated) monthly sessions</span>
+                        <span class="tier-sessions">Estimated 30,000–80,000 monthly sessions</span>
                     </div>
 
                     <div class="traffic-grid">
@@ -1948,7 +1948,7 @@
                         <div class="perf-hero-score score-cell-poor">33</div>
                         <div class="perf-hero-detail">
                             <h4>Mobile PageSpeed Score</h4>
-                            <p>Poor mobile performance — significant issues</p>
+                            <p>Poor mobile performance — significant issues across LCP, FCP, and TBT. Only CLS and INP pass thresholds.</p>
                             <!-- POPULATE PS_CLIENT_MOBILE_VERDICT examples:
                                  Score <40: "Critical — your mobile site is significantly slower than competitors. This is costing you conversions on every visit."
                                  Score 40-69: "Needs improvement — mobile visitors are experiencing noticeable delays that reduce engagement and conversions."
@@ -1973,12 +1973,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="client-row"><td class="site-name">Catalyst Pet (Client)</td><td class="score-cell-poor">33</td><td>23.0 s <span class="badge-fail">FAIL</span></td><td>6.4 s <span class="badge-fail">FAIL</span></td><td>1,180 ms <span class="badge-fail">FAIL</span></td><td>0 <span class="badge-pass">PASS</span></td></tr>
-<tr class="competitor-row"><td class="site-name">Pretty Litter</td><td class="score-cell-poor">Blocked</td><td>N/A <span class="badge-unknown">N/A</span></td><td>N/A <span class="badge-unknown">N/A</span></td><td>N/A <span class="badge-unknown">N/A</span></td><td>N/A <span class="badge-unknown">N/A</span></td></tr>
-<tr class="competitor-row"><td class="site-name">Tuft + Paw</td><td class="score-cell-poor">28</td><td>7.0 s <span class="badge-fail">FAIL</span></td><td>5.0 s <span class="badge-fail">FAIL</span></td><td>3,330 ms <span class="badge-fail">FAIL</span></td><td>0.005 <span class="badge-pass">PASS</span></td></tr>
-<tr class="competitor-row"><td class="site-name">Open Farm</td><td class="score-cell-poor">27</td><td>23.5 s <span class="badge-fail">FAIL</span></td><td>6.1 s <span class="badge-fail">FAIL</span></td><td>2,400 ms <span class="badge-fail">FAIL</span></td><td>0.018 <span class="badge-pass">PASS</span></td></tr>
-<tr class="competitor-row"><td class="site-name">Petco</td><td class="score-cell-poor">N/A</td><td>N/A <span class="badge-unknown">N/A</span></td><td>N/A <span class="badge-unknown">N/A</span></td><td>N/A <span class="badge-unknown">N/A</span></td><td>0.443 <span class="badge-fail">FAIL</span></td></tr>
-<tr class="competitor-row"><td class="site-name">PetSmart</td><td class="score-cell-poor">36</td><td>6.6 s <span class="badge-fail">FAIL</span></td><td>3.2 s <span class="badge-fail">FAIL</span></td><td>1,640 ms <span class="badge-fail">FAIL</span></td><td>0.047 <span class="badge-pass">PASS</span></td></tr>
+                            <tr class="client-row"><td>Catalyst Pet (Client)</td><td class="score-cell-poor">33</td><td class="score-cell-poor">46</td><td class="score-cell-poor">23.0s</td><td class="score-cell-good">0</td><td class="score-cell-poor">1,180ms</td></tr>
+<tr><td>Pretty Litter</td><td class="score-cell-poor">Blocked</td><td class="score-cell-poor">Blocked</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>Tuft + Paw</td><td class="score-cell-poor">28</td><td class="score-cell-moderate">62</td><td class="score-cell-poor">7.0s</td><td class="score-cell-good">0.005</td><td class="score-cell-poor">3,330ms</td></tr>
+<tr><td>Open Farm</td><td class="score-cell-poor">27</td><td class="score-cell-poor">46</td><td class="score-cell-poor">23.5s</td><td class="score-cell-good">0.018</td><td class="score-cell-poor">2,400ms</td></tr>
+<tr><td>Petco</td><td>N/A</td><td>N/A</td><td>N/A</td><td class="score-cell-poor">0.443</td><td>N/A</td></tr>
+<tr><td>PetSmart</td><td class="score-cell-poor">36</td><td class="score-cell-poor">54</td><td class="score-cell-poor">6.6s</td><td class="score-cell-good">0.047</td><td class="score-cell-poor">1,640ms</td></tr>
                             
                         </tbody>
                     </table>
@@ -1999,8 +1999,8 @@
                     <h3 class="subsection-title">Core Web Vitals — Google's UX Quality Signals</h3>
                     <p style="font-size: 12px; color: var(--color-text-muted); margin-bottom: 12px;">Sites failing Core Web Vitals may rank lower in Google mobile search results</p>
 
-                    <div class="cwv-pass-summary cwv-poor">
-                        x 1 of 5 Core Web Vitals passed
+                    <div class="cwv-pass-summary mixed">
+                        ⚠ 2 of 5 Core Web Vitals passed
                         
                     </div>
 
@@ -2031,15 +2031,15 @@
                         </div>
                         <div class="cwv-card">
                             <h5>INP <span class="cwv-subtitle">Tap/click responsiveness</span></h5>
-                            <div class="cwv-value ">N/A</div>
+                            <div class="cwv-value cwv-pass">154 ms</div>
                             <div class="cwv-target">Target: ≤ 200ms</div>
-                            <span class="cwv-status "></span>
+                            <span class="cwv-status pass">Pass</span>
                         </div>
                     </div>
 
                     <div class="insight-box">
                         <h4>What This Means for Revenue</h4>
-                        <p>Catalyst Pet scores 33/100 on mobile. Primary issues: LCP at 23.0 s (target: ≤2.5s); FCP at 6.4 s (target: ≤1.8s); TBT at 1,180 ms (target: ≤200ms).</p>
+                        <p>Catalyst Pet scores 33/100 on mobile — the second-lowest in this competitive set. Primary bottlenecks: LCP at 23.0s (target: ≤2.5s) means users wait 9× longer than they should to see content; FCP at 6.4s (target: ≤1.8s) delays any visual response; TBT at 1,180ms (target: ≤200ms) makes the page feel unresponsive. The silver lining: CrUX field data shows real-user performance is significantly better (LCP 2.1s, FCP 1.3s) — suggesting the lab test hits worst-case scenarios, but real users on repeat visits benefit from caching. Still, competitors like PetSmart (36) and Tuft + Paw (28) face similar struggles — this is an industry-wide mobile performance gap that represents an opportunity to leapfrog competitors with targeted optimization.</p>
                         
                     </div>
                 </div>

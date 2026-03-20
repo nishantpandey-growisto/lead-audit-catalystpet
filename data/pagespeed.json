@@ -57,6 +57,10 @@
       "cls_category": "FAST",
       "inp_ms": 154,
       "inp_category": "FAST",
+      "inp": "154\u00a0ms",
+      "inp_class": "cwv-pass",
+      "inp_status": "pass",
+      "inp_label": "Pass",
       "ttfb_ms": 436,
       "ttfb_category": "FAST"
     }
@@ -324,13 +328,13 @@
       }
     }
   ],
-  "competition_table_html": "<tr class=\"client-row\"><td class=\"site-name\">Catalyst Pet (Client)</td><td class=\"score-cell-poor\">33</td><td>23.0\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>6.4\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>1,180\u00a0ms <span class=\"badge-fail\">FAIL</span></td><td>0 <span class=\"badge-pass\">PASS</span></td></tr>\n<tr class=\"competitor-row\"><td class=\"site-name\">Pretty Litter</td><td class=\"score-cell-poor\">Blocked</td><td>N/A <span class=\"badge-unknown\">N/A</span></td><td>N/A <span class=\"badge-unknown\">N/A</span></td><td>N/A <span class=\"badge-unknown\">N/A</span></td><td>N/A <span class=\"badge-unknown\">N/A</span></td></tr>\n<tr class=\"competitor-row\"><td class=\"site-name\">Tuft + Paw</td><td class=\"score-cell-poor\">28</td><td>7.0\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>5.0\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>3,330\u00a0ms <span class=\"badge-fail\">FAIL</span></td><td>0.005 <span class=\"badge-pass\">PASS</span></td></tr>\n<tr class=\"competitor-row\"><td class=\"site-name\">Open Farm</td><td class=\"score-cell-poor\">27</td><td>23.5\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>6.1\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>2,400\u00a0ms <span class=\"badge-fail\">FAIL</span></td><td>0.018 <span class=\"badge-pass\">PASS</span></td></tr>\n<tr class=\"competitor-row\"><td class=\"site-name\">Petco</td><td class=\"score-cell-poor\">N/A</td><td>N/A <span class=\"badge-unknown\">N/A</span></td><td>N/A <span class=\"badge-unknown\">N/A</span></td><td>N/A <span class=\"badge-unknown\">N/A</span></td><td>0.443 <span class=\"badge-fail\">FAIL</span></td></tr>\n<tr class=\"competitor-row\"><td class=\"site-name\">PetSmart</td><td class=\"score-cell-poor\">36</td><td>6.6\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>3.2\u00a0s <span class=\"badge-fail\">FAIL</span></td><td>1,640\u00a0ms <span class=\"badge-fail\">FAIL</span></td><td>0.047 <span class=\"badge-pass\">PASS</span></td></tr>",
+  "competition_table_html": "<tr class=\"client-row\"><td>Catalyst Pet (Client)</td><td class=\"score-cell-poor\">33</td><td class=\"score-cell-poor\">46</td><td class=\"score-cell-poor\">23.0s</td><td class=\"score-cell-good\">0</td><td class=\"score-cell-poor\">1,180ms</td></tr>\n<tr><td>Pretty Litter</td><td class=\"score-cell-poor\">Blocked</td><td class=\"score-cell-poor\">Blocked</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>\n<tr><td>Tuft + Paw</td><td class=\"score-cell-poor\">28</td><td class=\"score-cell-moderate\">62</td><td class=\"score-cell-poor\">7.0s</td><td class=\"score-cell-good\">0.005</td><td class=\"score-cell-poor\">3,330ms</td></tr>\n<tr><td>Open Farm</td><td class=\"score-cell-poor\">27</td><td class=\"score-cell-poor\">46</td><td class=\"score-cell-poor\">23.5s</td><td class=\"score-cell-good\">0.018</td><td class=\"score-cell-poor\">2,400ms</td></tr>\n<tr><td>Petco</td><td>N/A</td><td>N/A</td><td>N/A</td><td class=\"score-cell-poor\">0.443</td><td>N/A</td></tr>\n<tr><td>PetSmart</td><td class=\"score-cell-poor\">36</td><td class=\"score-cell-poor\">54</td><td class=\"score-cell-poor\">6.6s</td><td class=\"score-cell-good\">0.047</td><td class=\"score-cell-poor\">1,640ms</td></tr>",
   "cwv_summary": {
-    "pass_count": 1,
-    "total": 4,
-    "class": "cwv-poor",
-    "icon": "x"
+    "pass_count": 2,
+    "total": 5,
+    "class": "mixed",
+    "icon": "⚠"
   },
-  "verdict": "Poor mobile performance \u2014 significant issues",
-  "narrative": "Catalyst Pet scores 33/100 on mobile. Primary issues: LCP at 23.0\u00a0s (target: \u22642.5s); FCP at 6.4\u00a0s (target: \u22641.8s); TBT at 1,180\u00a0ms (target: \u2264200ms)."
+  "verdict": "Poor mobile performance — significant issues across LCP, FCP, and TBT. Only CLS and INP pass thresholds.",
+  "narrative": "Catalyst Pet scores 33/100 on mobile — the second-lowest in this competitive set. Primary bottlenecks: LCP at 23.0s (target: ≤2.5s) means users wait 9× longer than they should to see content; FCP at 6.4s (target: ≤1.8s) delays any visual response; TBT at 1,180ms (target: ≤200ms) makes the page feel unresponsive. The silver lining: CrUX field data shows real-user performance is significantly better (LCP 2.1s, FCP 1.3s) — suggesting the lab test hits worst-case scenarios, but real users on repeat visits benefit from caching. Still, competitors like PetSmart (36) and Tuft + Paw (28) face similar struggles — this is an industry-wide mobile performance gap that represents an opportunity to leapfrog competitors with targeted optimization."
 }
