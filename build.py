@@ -84,6 +84,16 @@ def card(header, client_img, client_label, bench_img, bench_label, observations,
         client_html = f'''<img src="{client_img}" alt="{client_label}">
                                                 <div class="finding-screenshot-label client-label">{client_label}</div>'''
 
+    if bench_img is None:
+        bench_html = f'''<div class="finding-screenshot-missing" style="border-color:#10b981;">
+                                                    <div class="missing-icon" style="color:#6b7280;">—</div>
+                                                    <div class="missing-text" style="color:#6b7280;">No benchmark needed</div>
+                                                </div>
+                                                <div class="finding-screenshot-label benchmark-label">{bench_label or "Anti-pattern — avoid this"}</div>'''
+    else:
+        bench_html = f'''<img src="{bench_img}" alt="{bench_label}">
+                                                <div class="finding-screenshot-label benchmark-label">{bench_label}</div>'''
+
     return f"""<div class="finding-card">
                                     <div class="finding-card-header">
                                         {header}
@@ -94,8 +104,7 @@ def card(header, client_img, client_label, bench_img, bench_label, observations,
                                                 {client_html}
                                             </div>
                                             <div class="finding-screenshot">
-                                                <img src="{bench_img}" alt="{bench_label}">
-                                                <div class="finding-screenshot-label benchmark-label">{bench_label}</div>
+                                                {bench_html}
                                             </div>
                                         </div>
                                         <div class="finding-analysis">
