@@ -27,7 +27,7 @@
     "subscription_source": "Confirmed on PDP /products/cat-litter-multi-cat-formula — 'Subscribe & Save' vs 'One-Time Purchase' toggle; multiple delivery cadences shown (Every Month 10lb, Every 2 Months 20lb, Every 4 Months 40lb); dedicated nav links: /pages/subscribe, /pages/how-to-use, /pages/modifying-your-subscription",
     "tier": "Tier 2–3: Growth to Scale (estimated 30K–80K sessions/month)",
     "tier_sessions": "~30,000–80,000 sessions/month (estimated)",
-    "estimated_revenue": "$2M–$8M ARR (estimated — DTC subscription + Walmart retail; softwood litter subscription at ~$23–$49/month per customer)"
+    "estimated_revenue": "5000000"
   },
   "tier_narrative": "Catalyst Pet is a mid-market US DTC pet brand in the growth-to-scale tier. While direct SimilarWeb data was unavailable (platform blocked), strong proxy signals indicate meaningful traffic: 8,000+ verified Yotpo reviews across 9 products, a 17-page blog with 100+ posts, 18K Instagram followers (@catalystpet), active subscription program with multiple SKUs, and Walmart nationwide retail distribution (announced in site header). The tech stack depth — 17+ apps including Triple Whale (attribution at scale), ReCharge (subscriptions), Gorgias (support), Hotjar and Lucky Orange (dual CRO analytics), and TikTok/Pinterest pixels — is consistent with a brand spending meaningfully on paid acquisition and retention. Estimated monthly sessions: 30K–80K (Tier 2–3 boundary). SimilarWeb data should be manually checked when platform access is restored."
 }
