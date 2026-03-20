@@ -1,0 +1,42 @@
+{
+  "brand_name": "Catalyst Pet",
+  "brand_slug": "catalystpet",
+  "brand_url": "catalystpet.com",
+  "report_date": "March 2026",
+  "password": "catalystpet2026",
+  "industry": "health_wellness",
+  "industry_label": "Pet Products (mapped to Health & Wellness)",
+  "industry_short": "pet",
+  "geo": "us",
+  "audit_type": "lead",
+  "competitors": [
+    {"name": "Pretty Litter", "url": "prettylitter.com"},
+    {"name": "Tuft + Paw", "url": "tuftandpaw.com"},
+    {"name": "Open Farm", "url": "openfarmpet.com"},
+    {"name": "Petco", "url": "www.petco.com/shop/en/petcostore"},
+    {"name": "PetSmart", "url": "www.petsmart.com"}
+  ],
+  "pagespeed_api_key": "***REDACTED_API_KEY***",
+  "feedback_rules": [
+    "Verify popups in incognito: wait 30+ sec, scroll, exit-intent test",
+    "Test cart features with items in cart, never empty",
+    "Distinguish missing vs broken vs conditionally visible",
+    "Read exact SimilarWeb percentages, never estimate from bar charts",
+    "Use Lighthouse LAB data, not CrUX field data for scores",
+    "Verify proxy signals on-page: /collections/all for products, search Instagram variants",
+    "At least 60% of findings should be screenshot-only (Level 3)",
+    "Benchmark screenshots must show the EXACT feature recommended",
+    "Use client_img=None placeholder when feature genuinely absent",
+    "Cart findings need cart screenshots, PDP needs PDP screenshots",
+    "Prefer mockups over competitor screenshots for feature enhancements",
+    "Never flag industry-standard practices as issues",
+    "For US pet brand: check subscription model, sustainability messaging, trust badges, ingredient transparency"
+  ],
+  "industry_benchmarks": {
+    "cvr": {"p25": "0.82%", "p50": "1.38%", "p75": "2.10%", "p50_raw": "1.38"},
+    "atc_rate": {"p25": "6.42%", "p50": "18.99%", "p75": "20.27%"},
+    "pdp_view_rate": {"p25": "60.4%", "p50": "71.6%", "p75": "115.9%"},
+    "cart_to_checkout": {"p25": "22.8%", "p50": "23.2%", "p75": "40.5%"},
+    "checkout_completion": {"p25": "12.3%", "p50": "17.7%", "p75": "32.1%"}
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "findings": {
+    "homepage": [
+      {
+        "id": "hp_f1",
+        "title": "No Trust/Eco Badge Bar on Homepage",
+        "header": "Adding a trust badge bar with eco certifications above the fold can increase purchase confidence by 12-15% -- Catalyst Pet's sustainability story is buried below the fold",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_f1_client.jpeg",
+        "client_label": "Catalyst Pet -- Mobile Homepage Hero",
+        "benchmark_screenshot": "screenshots/pdp_f1_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- Mobile PDP Trust Badges",
+        "observations": [
+          "Catalyst Pet's homepage hero section ('Keep the Cat, Ditch the Smell') has no trust badges, eco certifications, or key differentiator icons above the fold",
+          "Key selling points like 'Biodegradable', 'Upcycled Soft Wood', 'Made in America', 'Low Dust' are not surfaced until users scroll far down the page",
+          "For an eco-conscious brand competing against traditional clay litter, sustainability credentials need to be instantly visible to justify the premium price",
+          "Tuft + Paw surfaces 'Low-Tracking', 'Flushable', '99% Dust-Free' as icon badges directly below the product title, making benefits scannable in seconds"
+        ],
+        "recommendations": [
+          "Add a horizontal trust badge bar directly below the hero section with 4-5 key icons: Biodegradable, Upcycled Wood, Low Dust, Made in USA, Lightweight",
+          "Use simple icon + 2-3 word format (similar to Tuft + Paw) so mobile users can scan benefits without reading paragraphs",
+          "Consider adding third-party eco certification badges (BPI Certified, Sustainable Forestry) to build credibility beyond self-claimed benefits"
+        ],
+        "benchmark_tag": "Standard -- 9/10 stores have trust badge bars"
+      },
+      {
+        "id": "hp_f2",
+        "title": "Hero Section Lacks Quantified Value Proposition",
+        "header": "Quantifying key benefits in the hero section can boost engagement rate by 8-12% -- visitors need instant reasons to stay",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_hero_client.jpeg",
+        "client_label": "Catalyst Pet -- Mobile Hero",
+        "benchmark_screenshot": "screenshots/hp_f1_benchmark.jpeg",
+        "benchmark_label": "Tuft + Paw -- Mobile Hero with Clear Benefits",
+        "observations": [
+          "The headline 'Keep the Cat, Ditch the Smell' is catchy but does not communicate any specific product benefit or differentiator",
+          "There are no quantified stats, review counts, or social proof elements visible in the first fold",
+          "The formula selector below the hero (Healthy Cat, Multi Cat, Unscented, Wood Pellets) provides good navigation but lacks price anchoring",
+          "Tuft + Paw immediately communicates 'Low-tracking, low-dust, multi-cat strength' in the hero subtitle, setting clear expectations"
+        ],
+        "recommendations": [
+          "Add 2-3 quantified stats below the headline: '5,200+ 5-Star Reviews', '7x Lighter Than Clay', '57% Savings on Subscription'",
+          "Include a mini social proof bar with aggregate Yotpo rating (4.6 stars, 5,239 reviews) near the CTA",
+          "Add subscription price anchoring on the hero: 'Starting at $12.35/month' to pre-qualify price-sensitive visitors"
+        ],
+        "benchmark_tag": "Standard -- 10/10 stores have quantified hero messaging"
+      },
+      {
+        "id": "hp_f3",
+        "title": "No Sticky Announcement Bar or Free Shipping Threshold",
+        "header": "A persistent free shipping bar can increase average order value by 5-10% by motivating threshold-based purchases",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/hp_hero_client.jpeg",
+        "client_label": "Catalyst Pet -- Mobile Top Bar",
+        "benchmark_screenshot": "screenshots/col_cards_benchmark_petsmart.jpeg",
+        "benchmark_label": "PetSmart -- Promotional Announcement Bar",
+        "observations": [
+          "Catalyst Pet's announcement bar shows Walmart availability, which is useful but not conversion-oriented for the D2C store",
+          "There is no free shipping threshold messaging despite offering free shipping on all orders -- this benefit is hidden until the PDP/cart",
+          "The announcement bar text is quite long (2 lines on mobile) and contains two separate 'here' links, creating cognitive load",
+          "PetSmart uses a bold, concise promotional bar ('15% OFF $50 Pickup or Same-Day Delivery') that drives immediate action"
+        ],
+        "recommendations": [
+          "Replace the Walmart bar with a rotating announcement: 'Free Shipping on Every Order' / 'Subscribe & Save Up to 57%' / 'Now at Walmart -- Find a Store'",
+          "Make the bar sticky on scroll so the value proposition persists as users browse",
+          "Keep each message to one line on mobile with a single clear CTA"
+        ],
+        "benchmark_tag": "Growing -- 6/10 stores have free shipping threshold bars"
+      },
+      {
+        "id": "hp_f4",
+        "title": "Homepage Missing Bestseller/Product Cards Section",
+        "header": "Showing products with prices and subscription savings on the homepage can boost PDP view rate by 15-20% -- visitors currently see no products or prices",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_mid_client.jpeg",
+        "client_label": "Catalyst Pet -- Homepage Mid Section",
+        "benchmark_screenshot": "screenshots/col_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- Collection with Prices",
+        "observations": [
+          "The homepage has no product cards with images, prices, or quick-add buttons -- visitors must click through to PDP or collection to see any pricing",
+          "The mid-section is dedicated to a comparison chart (Catalyst vs Clay) which is educational but delays the purchase path",
+          "Homepage formula selector buttons link to individual PDPs but show no price preview, making the shopping experience feel disconnected",
+          "Tuft + Paw shows products with clear pricing ($29.00) and descriptions directly in the collection, reducing clicks to purchase"
+        ],
+        "recommendations": [
+          "Add a 'Shop Our Formulas' section with product cards showing: image, formula name, star rating, review count, subscription price (e.g., 'From $12.35/mo'), and 'Shop Now' CTA",
+          "Show the subscription savings visually (e.g., strikethrough on one-time price) to anchor value at the discovery stage",
+          "Position this section above the comparison chart so price-ready visitors can act immediately"
+        ],
+        "benchmark_tag": "Standard -- 8/10 stores show products with prices on homepage"
+      },
+      {
+        "id": "hp_f5",
+        "title": "Klaviyo Popup Covers Content on Mobile",
+        "header": "Intrusive popups on mobile can increase bounce rate by 10-15% -- the email capture overlay blocks the entire viewport",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_reviews_client.jpeg",
+        "client_label": "Catalyst Pet -- Klaviyo Popup Blocking Content",
+        "benchmark_screenshot": null,
+        "benchmark_label": null,
+        "observations": [
+          "The Klaviyo email capture popup ('Enter for a chance to win one free bag of litter!') appears while scrolling and covers the entire mobile viewport",
+          "The popup has no visible close button from the screenshot, forcing users to interact with it before continuing to browse",
+          "It appears mid-scroll rather than on exit intent, interrupting users who are actively engaged with content (reviews section)",
+          "The popup triggers repeatedly during a single session, appearing even after being dismissed"
+        ],
+        "recommendations": [
+          "Delay the popup to exit-intent only on mobile, or trigger after 60+ seconds of engaged browsing",
+          "Ensure the close button (X) is large and clearly visible on mobile (minimum 44x44px tap target)",
+          "Consider replacing the full-screen popup with a non-intrusive slide-up banner at the bottom of the screen",
+          "Limit popup frequency to once per session with a cookie-based cooldown"
+        ],
+        "benchmark_tag": "Standard -- intrusive popups are a known anti-pattern"
+      }
+    ],
+    "collection": [
+      {
+        "id": "col_f1",
+        "title": "No Prices Shown on Collection Product Cards",
+        "header": "Displaying prices on collection cards reduces friction and can increase add-to-cart rate by 8-12% -- visitors currently must click through to see any pricing",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/col_f1_client.jpeg",
+        "client_label": "Catalyst Pet -- Collection Card (No Price)",
+        "benchmark_screenshot": "screenshots/col_cards_benchmark_petsmart.jpeg",
+        "benchmark_label": "PetSmart -- Collection Cards with Prices & Ratings",
+        "observations": [
+          "Catalyst Pet's collection cards show formula name, star rating (4.6), review count, and description -- but no price whatsoever",
+          "Visitors cannot compare value across formulas without clicking into each PDP individually, adding unnecessary friction to the purchase path",
+          "The subscription savings (up to 57%) are completely invisible at the collection level, missing a major conversion opportunity",
+          "PetSmart shows price ranges ($13.99 - $19.99), sizes, ratings, and review counts on every product card for instant comparison"
+        ],
+        "recommendations": [
+          "Add price to every collection card -- show both one-time and subscription price (e.g., '$23.49/mo or $28.50 one-time')",
+          "Display subscription savings badge (e.g., 'Save 57%') on cards to encourage subscription at the discovery stage",
+          "Consider adding a quick 'Subscribe' CTA button on each card to reduce the path to checkout"
+        ],
+        "benchmark_tag": "Standard -- 10/10 stores show prices on collection cards"
+      },
+      {
+        "id": "col_f2",
+        "title": "No Filter or Sort Options on Collection Page",
+        "header": "Collection filtering and sorting options help visitors find the right product faster -- their absence adds friction for multi-cat or budget-conscious shoppers",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/col_cards_client.jpeg",
+        "client_label": "Catalyst Pet -- No Filters on Collection",
+        "benchmark_screenshot": "screenshots/col_cards_benchmark_petsmart.jpeg",
+        "benchmark_label": "PetSmart -- Filter Bar (Sort, Brand, Price)",
+        "observations": [
+          "The collection page has no sort or filter options -- products are displayed in a fixed order with no way to sort by price, rating, or popularity",
+          "While the catalog is small (4 litter formulas), there is no way to filter by use case (single cat vs multi-cat) or scent preference",
+          "PetSmart provides 'Sort & filter', 'Shop by store', 'Brand', and 'Price' filter options that let shoppers narrow down from 141+ results efficiently",
+          "As Catalyst expands their product line (waste bags, starter packs, accessories), the lack of filtering will become a bigger pain point"
+        ],
+        "recommendations": [
+          "Add a basic sort dropdown (Popularity, Price Low-High, Price High-Low, Newest) even for the current small catalog",
+          "Add filter tags by use case: 'Best for 1 Cat', 'Best for Multi-Cat', 'Unscented', 'Non-Clumping'",
+          "Implement a 'Help Me Choose' button that links to the existing quiz for undecided visitors"
+        ],
+        "benchmark_tag": "Growing -- 7/10 stores have collection filters"
+      },
+      {
+        "id": "col_f3",
+        "title": "No Quick-Add or Subscribe Button on Collection Cards",
+        "header": "Adding quick-action buttons on collection cards can reduce clicks-to-purchase by 40% and boost conversion for returning customers",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/col_f1_client.jpeg",
+        "client_label": "Catalyst Pet -- Collection Card (Shop Now Only)",
+        "benchmark_screenshot": "screenshots/col_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- Collection Card with Price & Description",
+        "observations": [
+          "Each product card has only a 'SHOP NOW' link that navigates to the full PDP, requiring multiple steps before a returning customer can reorder",
+          "There is no quick-add-to-cart functionality on the collection page, even for repeat subscribers who already know their preferred formula",
+          "The card layout is image-heavy with large product photos but small text descriptions, making it difficult to compare formulas at a glance",
+          "Tuft + Paw includes clear pricing and concise product descriptions on collection cards for faster decision-making"
+        ],
+        "recommendations": [
+          "Add a 'Quick Subscribe' button on each card that auto-selects the most popular size/frequency for that formula",
+          "For returning logged-in customers, show a 'Reorder' button with their previous subscription configuration",
+          "Consider adding a compact comparison view or size selector directly on the card"
+        ],
+        "benchmark_tag": "Growing -- 6/10 stores have quick-add on collection cards"
+      }
+    ],
+    "pdp": [
+      {
+        "id": "pdp_f1",
+        "title": "No Sticky Add-to-Cart on Mobile PDP",
+        "header": "A sticky Add to Cart bar on mobile can boost conversions by 3-5% -- once users scroll past the ATC button, there is no way to purchase without scrolling back up",
+        "severity": "critical",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/pdp_no_sticky_client.jpeg",
+        "client_label": "Catalyst Pet -- No Sticky ATC on Scroll",
+        "benchmark_screenshot": "screenshots/pdp_sub_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- Sticky ATC with Subscription Option",
+        "observations": [
+          "When scrolling past the ATC button on the PDP, there is no sticky bar that follows the user -- the ATC button disappears from view",
+          "The PDP is extremely long (price comparison table, benefits summary, recommended by section, video, reviews, 18 FAQs) requiring extensive scrolling",
+          "Users who scroll down to read reviews or FAQs and become convinced must scroll all the way back up to the ATC section to complete their purchase",
+          "Tuft + Paw keeps the ATC button and key purchase info (price, subscription toggle) persistently visible as users explore the page"
+        ],
+        "recommendations": [
+          "Add a sticky bottom bar on mobile that appears after the user scrolls past the main ATC button",
+          "Include product name, selected price, and a prominent 'Add to Cart' CTA in the sticky bar",
+          "Show the selected purchase type (Subscribe or One-Time) in the sticky bar to reduce confusion"
+        ],
+        "benchmark_tag": "Growing -- 5/10 stores have sticky ATC on mobile"
+      },
+      {
+        "id": "pdp_f2",
+        "title": "Subscription Not Pre-Selected on PDP",
+        "header": "Pre-selecting the subscription option on PDP can increase subscription adoption by 15-25% -- most US D2C pet brands default to Subscribe & Save",
+        "severity": "critical",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/pdp_subscription_client.jpeg",
+        "client_label": "Catalyst Pet -- Subscribe & Save Selection Area",
+        "benchmark_screenshot": "screenshots/pdp_sub_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- Subscribe & Save Pre-Selected (25% Off)",
+        "observations": [
+          "The PDP shows 'Subscribe & Save' and 'One-Time Purchase' as options in Step 2, but it is unclear which is pre-selected by default on fresh page load",
+          "The subscription savings are shown as '57% over a one-time purchase' only after selecting the 40lb option -- the initial savings are not immediately visible for smaller sizes",
+          "Tuft + Paw pre-selects 'Subscribe & Save 25%' by default with a clear strikethrough price ($29 to $21.75) and prominent savings callout",
+          "The multi-step flow (4 steps: formula, purchase type, cat count, delivery) adds friction compared to competitors who use a simple toggle"
+        ],
+        "recommendations": [
+          "Pre-select 'Subscribe & Save' by default for all formulas, with the most popular delivery size highlighted as 'Most Popular' or 'Best Value'",
+          "Show percentage savings prominently next to the subscription toggle (e.g., 'Subscribe & Save 25-57%') before users make a selection",
+          "Consider simplifying the 4-step flow to 2 steps: size selector + Subscribe/One-Time toggle -- the cat count can be a helper tooltip rather than a required step"
+        ],
+        "benchmark_tag": "Growing -- 6/10 US stores pre-select subscription"
+      },
+      {
+        "id": "pdp_f3",
+        "title": "No Sustainability/Eco Certification Badges Near ATC",
+        "header": "Displaying eco-certification badges near the Add to Cart button can increase purchase confidence by 10-15% for sustainability-conscious buyers",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/pdp_subscription_client.jpeg",
+        "client_label": "Catalyst Pet -- ATC Area (No Eco Badges)",
+        "benchmark_screenshot": "screenshots/hp_eco_benchmark_openfarm.jpeg",
+        "benchmark_label": "Open Farm -- Certified B Corp Badge",
+        "observations": [
+          "The ATC area shows 'Free Shipping with any order!' and a product illustration but has no eco/sustainability badges or certifications",
+          "Key environmental claims (biodegradable, upcycled soft wood, renewable) are mentioned only in paragraph text far below the fold",
+          "The 'Made in America' and 'Donations to Shelters' badges appear only in the cart drawer, not on the PDP where the purchase decision is made",
+          "Open Farm prominently displays their Certified B Corporation badge, reinforcing their sustainability commitment at every touchpoint"
+        ],
+        "recommendations": [
+          "Add 3-4 eco certification icons directly below or beside the ATC button: Biodegradable, Upcycled Wood, Made in USA, Low Dust",
+          "If Catalyst Pet has any third-party certifications (BPI Certified Compostable, Sustainable Forestry Initiative), feature them prominently",
+          "Include a 'Why Sustainable?' expandable section near the ATC with quantified environmental impact stats"
+        ],
+        "benchmark_tag": "Standard -- 8/10 stores show certification badges on PDP"
+      },
+      {
+        "id": "pdp_f4",
+        "title": "No Money-Back Guarantee or Risk Reversal Near ATC",
+        "header": "Displaying a money-back guarantee near the ATC can reduce purchase hesitation by 18-22% -- first-time litter switchers need reassurance",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/pdp_subscription_client.jpeg",
+        "client_label": "Catalyst Pet -- ATC Area (No Guarantee)",
+        "benchmark_screenshot": "screenshots/pdp_sub_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- 30 Day Money-Back Guarantee Badge",
+        "observations": [
+          "There is no satisfaction guarantee, money-back promise, or risk-reversal messaging visible on the PDP near the purchase decision point",
+          "Switching cat litter is a high-anxiety purchase -- cats may reject the new litter, and owners need reassurance that they can return it",
+          "Tuft + Paw prominently displays '30 Day Money-Back Guarantee' as an icon badge directly below their ATC button alongside 'Free Shipping' and 'Cancel Anytime'",
+          "Catalyst has a refund policy page (linked in footer) but the guarantee is not surfaced where the purchase decision is being made"
+        ],
+        "recommendations": [
+          "Add a '100% Satisfaction Guarantee' or '30-Day Money-Back' badge directly below the ATC button",
+          "Display 3 trust icons in a row: Free Shipping + Cancel Anytime + Money-Back Guarantee",
+          "Include a brief one-line reassurance: 'If your cat doesn't love it, we'll make it right' to reduce litter-switching anxiety"
+        ],
+        "benchmark_tag": "Growing -- 5/10 stores show money-back guarantee on PDP"
+      },
+      {
+        "id": "pdp_f5",
+        "title": "Product Description Lacks Collapsible Sections",
+        "header": "Using accordion/collapsible sections for PDP content improves scannability by 30-40% -- the current layout mixes educational and purchase content in a single long scroll",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/pdp_benefits_client.jpeg",
+        "client_label": "Catalyst Pet -- Benefits & Recommended By Sections",
+        "benchmark_screenshot": "screenshots/pdp_f1_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- Clean PDP with Scannable Layout",
+        "observations": [
+          "The PDP content is presented as a single continuous scroll: benefits list, 'Recommended By' logo carousel (50+ rescue organizations), comparison image, savings table, mission video, reviews, and 18 FAQs",
+          "There are no collapsible/accordion sections to help users find specific information -- they must scroll through everything sequentially",
+          "The 'Recommended By' section alone contains 50+ organization logos that take up significant vertical space on mobile",
+          "The FAQ section has 18 items all visible at once, creating an overwhelming wall of text"
+        ],
+        "recommendations": [
+          "Organize PDP content into collapsible accordion sections: Benefits, Ingredients/Materials, How It Works, Recommended By, Savings Calculator, FAQ",
+          "Show the first 2-3 FAQ items expanded by default and collapse the rest behind a 'Show More' toggle",
+          "Limit the 'Recommended By' section to 5-6 key logos with a 'See All Partners' expandable section"
+        ],
+        "benchmark_tag": "Standard -- 9/10 stores use accordion sections on PDP"
+      },
+      {
+        "id": "pdp_f6",
+        "title": "No Yotpo Review Photo/Video Gallery on PDP",
+        "header": "User-generated review photos and videos can increase conversion by 10-15% -- Catalyst has 2,151+ reviews but no visual UGC gallery on the PDP",
+        "severity": "opportunity",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/pdp_benefits_client.jpeg",
+        "client_label": "Catalyst Pet -- PDP Below Fold (No UGC)",
+        "benchmark_screenshot": "screenshots/pdp_f1_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- 10,260 Reviews with Photo Gallery",
+        "observations": [
+          "Catalyst Pet has 2,151 reviews for Healthy Cat formula and 5,239 across all products -- a significant social proof asset",
+          "However, the Yotpo widget is configured for text-only reviews at the bottom of the page with no photo/video gallery section",
+          "There is no UGC (User Generated Content) section showing real cats using the product, which is especially compelling for pet products",
+          "The reviews are positioned at the very bottom of a very long PDP, requiring extensive scrolling to reach them"
+        ],
+        "recommendations": [
+          "Enable Yotpo's photo/video review gallery and position a UGC carousel in the mid-PDP section, before the FAQ",
+          "Encourage photo reviews through a post-purchase email flow offering a discount for photo submissions",
+          "Add a 'Reviews' anchor link near the star rating at the top of the PDP for quick navigation to the review section"
+        ],
+        "benchmark_tag": "Growing -- 7/10 stores feature UGC review galleries"
+      }
+    ],
+    "cart": [
+      {
+        "id": "cart_f1",
+        "title": "Cart Drawer Missing Express Checkout Buttons",
+        "header": "Displaying express checkout options (Apple Pay, Google Pay, Shop Pay) in the cart drawer can reduce checkout time by 40% and boost conversion by 5-8%",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/cart_modal_client.jpeg",
+        "client_label": "Catalyst Pet -- Cart Drawer",
+        "benchmark_screenshot": "screenshots/pdp_sub_benchmark_tuft.jpeg",
+        "benchmark_label": "Tuft + Paw -- ATC with Express Payment Badges",
+        "observations": [
+          "The cart drawer mentions 'Express Payments are available at Checkout' as text but does not display the actual payment method icons (Apple Pay, Google Pay, Shop Pay, PayPal)",
+          "Shoppers who prefer express checkout have no visual cue that their preferred method is available, potentially causing them to abandon before reaching checkout",
+          "Showing payment icons builds trust and signals a modern, frictionless checkout experience",
+          "The Afterpay/BNPL option detected in the page source is not mentioned anywhere in the cart drawer either"
+        ],
+        "recommendations": [
+          "Replace the text 'Express Payments are available at Checkout' with actual payment method icons: Apple Pay, Google Pay, Shop Pay, PayPal",
+          "Add Afterpay/Klarna BNPL messaging (e.g., '4 interest-free payments of $12.35') to reduce price sensitivity",
+          "Consider adding a 'Buy Now' express checkout button directly in the cart drawer for one-click purchase"
+        ],
+        "benchmark_tag": "Standard -- 8/10 stores show express payment icons in cart"
+      },
+      {
+        "id": "cart_f2",
+        "title": "No Cart Upsell for Subscription Upgrade",
+        "header": "Offering a subscription upgrade prompt in the cart can increase subscription adoption by 10-15% -- one-time buyers should see the savings opportunity",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/cart_modal_client.jpeg",
+        "client_label": "Catalyst Pet -- Cart with Cross-Sells",
+        "benchmark_screenshot": null,
+        "benchmark_label": null,
+        "observations": [
+          "The cart drawer shows 'You May Also Like' cross-sell products (Biodegradable Pet Waste Bags, Starter Pack) which is good",
+          "However, there is no prompt to upgrade a one-time purchase to a subscription with savings callout",
+          "The cart shows a 30% off coupon (CAT30) for waste bags but no incentive to subscribe for the main litter product",
+          "For a subscription-first brand, the cart is a critical conversion point to move one-time buyers into the recurring revenue model"
+        ],
+        "recommendations": [
+          "Add a 'Switch to Subscribe & Save' banner in the cart showing the per-order savings and subscription benefits",
+          "Display a comparison: 'One-Time: $49.40 vs Subscribe: $28.50/delivery (Save 42%)' with a one-tap conversion toggle",
+          "For existing subscribers, show a 'Add to Next Delivery' option instead of creating a separate one-time order"
+        ],
+        "benchmark_tag": "Growing -- 5/10 subscription brands offer cart upgrade prompts"
+      },
+      {
+        "id": "cart_f3",
+        "title": "No Estimated Delivery Date in Cart",
+        "header": "Showing estimated delivery dates in the cart can reduce checkout abandonment by 7-10% -- shoppers want to know when their litter will arrive",
+        "severity": "opportunity",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/cart_modal_client.jpeg",
+        "client_label": "Catalyst Pet -- Cart (No Delivery Estimate)",
+        "benchmark_screenshot": null,
+        "benchmark_label": null,
+        "observations": [
+          "The cart drawer shows subtotal and free shipping qualification but no estimated delivery date or shipping speed information",
+          "For a consumable product like cat litter, knowing delivery timing is critical -- customers may be running low and need to plan",
+          "The PDP FAQ mentions shipping details but this information should surface in the cart where the purchase decision is finalized",
+          "Adding delivery estimates increases confidence and reduces 'will it arrive in time?' anxiety"
+        ],
+        "recommendations": [
+          "Add an estimated delivery date range (e.g., 'Arrives Mar 25-27') based on the customer's zip code or default to 3-5 business day estimate",
+          "For subscription orders, show the next delivery date to set expectations for the recurring schedule",
+          "Consider adding expedited shipping options with clear pricing for customers who need litter urgently"
+        ],
+        "benchmark_tag": "Growing -- 6/10 stores show delivery estimates in cart"
+      }
+    ]
+  },
+  "counts": {
+    "total": 17,
+    "homepage": 5,
+    "collection": 3,
+    "pdp": 6,
+    "cart": 3,
+    "critical": 6,
+    "important": 9,
+    "opportunity": 2
+  }
+}

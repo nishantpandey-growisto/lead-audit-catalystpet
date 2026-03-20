@@ -1,0 +1,60 @@
+{
+  "platform": "Shopify",
+  "platform_status": "warning",
+  "platform_status_label": "Custom Theme",
+  "platform_notes": "Running on Shopify (catalystpet.myshopify.com) with a custom theme called 'Catalyst' v1.2.11 (not from the Shopify Theme Store). The theme uses jQuery 1.10.0 (2013-era), Modernizr 2.7.1, and Handlebars -- all significantly outdated libraries that impact performance and security.",
+  "theme": {
+    "name": "Catalyst",
+    "type": "Custom (not from Theme Store)",
+    "status": "warning",
+    "status_label": "Outdated Architecture",
+    "version_note": "v1.2.11 -- custom-built theme with no Theme Store ID. Last modified: 'Walmart/store locator changes - 2/23/2026'",
+    "feature_note": "Uses jQuery 1.10.0 (2013), Modernizr 2.7.1, Hammer.js, Owl Carousel -- all legacy libraries. Font file (Futura-Normal.ttf) is corrupted with cmap parsing errors. A JavaScript file (bio-bag-validation.js) returns 404. The theme lacks modern Shopify 2.0 section architecture."
+  },
+  "checkout": {
+    "type": "Shopify Native Checkout",
+    "status": "good",
+    "status_label": "Standard Shopify Checkout",
+    "guest_note": "Standard Shopify checkout with guest checkout likely enabled",
+    "express_note": "Express payments mentioned ('Express Payments are available at Checkout') but icons not displayed in cart drawer. Shop Pay, Apple Pay, and Google Pay detected in page source via shopify-digital-wallet meta tag.",
+    "friction_note": "Cart uses a slide-out drawer (good UX pattern) with cross-sell recommendations. No Afterpay/BNPL messaging visible in cart despite Afterpay being detected in page source."
+  },
+  "payments": {
+    "gateway": "Shopify Payments",
+    "status": "good",
+    "status_label": "Standard Gateway",
+    "methods_note": "Shopify Payments as primary gateway with express checkout (Shop Pay, Apple Pay, Google Pay). Afterpay detected in source code for BNPL option.",
+    "cod_note": "N/A -- US market, no COD expected",
+    "bnpl_note": "Afterpay available but not prominently displayed. Consider adding BNPL messaging on PDP and cart ('4 payments of $X with Afterpay') to reduce price sensitivity for larger subscription orders."
+  },
+  "cdn": {
+    "provider": "Shopify CDN (cdn.shopify.com)",
+    "status": "warning",
+    "status_label": "Image Optimization Needed",
+    "image_note": "Images served via Shopify CDN with automatic WebP conversion. However, several product images are large (900x900 originals) and some decorative images lack width/height attributes causing layout shifts.",
+    "compression_note": "Shopify CDN handles compression automatically. The corrupted Futura-Normal.ttf font file adds unnecessary network requests with repeated download failures.",
+    "caching_note": "Standard Shopify CDN caching in place. Third-party scripts (Klaviyo, Yotpo, Clarity, Triple Whale, TikTok, Facebook) add significant external requests."
+  },
+  "security": {
+    "ssl_status": "Active",
+    "status": "good",
+    "status_label": "Standard Security",
+    "https_note": "Full HTTPS enabled across all pages via Shopify's automatic SSL certificate",
+    "pci_note": "PCI DSS compliant via Shopify Payments. Checkout runs on Shopify's secure infrastructure.",
+    "cookie_note": "Standard Shopify cookie implementation. Multiple tracking scripts (GA4, FB Pixel, TikTok, Klaviyo, Clarity, Triple Whale) set cookies -- privacy policy page exists but no cookie consent banner was observed."
+  },
+  "health": {
+    "good_count": 4,
+    "total": 6,
+    "class": "moderate",
+    "icon": "~",
+    "summary": "4 of 6 infrastructure areas healthy. Theme architecture and CDN optimization need attention."
+  },
+  "console_errors": [
+    "Corrupted font file: Futura-Normal.ttf fails to decode (cmap parsing error) -- loads and fails 8+ times per page",
+    "404 error: A resource failed to load (server returned 404)",
+    "MIME type error: bio-bag-validation.js blocked -- returns text/html instead of JavaScript",
+    "Uncaught TypeError: 'Failed to construct URL: Invalid URL' -- JavaScript error on page load"
+  ],
+  "narrative": "Catalyst Pet runs on Shopify with a custom-built theme ('Catalyst' v1.2.11) that shows signs of technical debt. The theme relies on jQuery 1.10.0 and other legacy libraries from 2013, which impacts page performance. A corrupted font file (Futura-Normal.ttf) generates 8+ console warnings per page load, and a missing JavaScript file (bio-bag-validation.js) causes additional errors. The checkout infrastructure is solid with Shopify Payments, express checkout options, and Afterpay BNPL -- but these payment options are not prominently surfaced in the shopping experience. The most critical opportunity is modernizing the theme to Shopify 2.0 architecture, which would unlock section-based customization, improve Core Web Vitals, and eliminate the legacy library dependencies."
+}

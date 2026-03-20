@@ -1,0 +1,152 @@
+{
+  "present_apps": [
+    {
+      "name": "Yotpo Reviews",
+      "category": "Reviews & Social Proof",
+      "quality": "good",
+      "notes": "4.6 stars with 5,239+ total reviews across products. Active review management with store owner responses. Widget configured with search, filters, and topic tags."
+    },
+    {
+      "name": "Klaviyo",
+      "category": "Email & SMS Marketing",
+      "quality": "warning",
+      "notes": "Email capture popup active ('Win a free bag of litter!'). However, the popup is intrusive on mobile -- covers entire viewport, triggers mid-scroll, and reappears after dismissal. Company ID: HBtDPh."
+    },
+    {
+      "name": "ReCharge Subscriptions",
+      "category": "Subscription / Recurring",
+      "quality": "good",
+      "notes": "Detected in page source (rechargepayments.com). Powers the Subscribe & Save flow on PDP with multiple delivery options (10lb monthly, 20lb bimonthly, 40lb quarterly). Well-integrated with the custom product configurator."
+    },
+    {
+      "name": "Gorgias",
+      "category": "Customer Support",
+      "quality": "good",
+      "notes": "Detected in page source (gorgias.chat). No visible chat widget on mobile during testing -- may be configured for specific pages or business hours only."
+    },
+    {
+      "name": "Microsoft Clarity",
+      "category": "Analytics & Heatmaps",
+      "quality": "good",
+      "notes": "Active tracking (clarity.ms, project ID: puc0w8xl0n). Provides session recordings and heatmaps for UX insights."
+    },
+    {
+      "name": "Google Tag Manager",
+      "category": "Tag Management",
+      "quality": "good",
+      "notes": "GTM container active (GTM-T56CXDN). Manages multiple tracking scripts."
+    },
+    {
+      "name": "Google Analytics 4",
+      "category": "Analytics",
+      "quality": "good",
+      "notes": "Two GA4 properties detected: G-B61K93NBE6 (primary) and GT-TNHG2RVF. Also a G-000000 placeholder tag that should be removed."
+    },
+    {
+      "name": "Facebook Pixel",
+      "category": "Advertising",
+      "quality": "good",
+      "notes": "Active pixel (ID: 2385575601730303). Facebook domain verification configured. Tracks standard e-commerce events."
+    },
+    {
+      "name": "TikTok Pixel",
+      "category": "Advertising",
+      "quality": "good",
+      "notes": "Active pixel (SDK ID: CI9NSSBC77U0O25FC4F0). Tracks events via analytics.tiktok.com."
+    },
+    {
+      "name": "Triple Whale",
+      "category": "Attribution & Analytics",
+      "quality": "good",
+      "notes": "Active pixel detected via triplewhale-pixel.web.app and whale.camera domain. Provides multi-touch attribution for ad spend optimization."
+    },
+    {
+      "name": "Pinterest Tag",
+      "category": "Advertising",
+      "quality": "good",
+      "notes": "Pinterest domain verification configured (p:domain_verify meta tag). Pinterest tracking tag detected in page source."
+    },
+    {
+      "name": "Hotjar",
+      "category": "Analytics & Heatmaps",
+      "quality": "warning",
+      "notes": "Detected in page source alongside Microsoft Clarity. Running both Hotjar and Clarity is redundant -- they serve the same purpose (session recordings + heatmaps) and add unnecessary script weight."
+    },
+    {
+      "name": "Lucky Orange",
+      "category": "Analytics & Heatmaps",
+      "quality": "warning",
+      "notes": "Detected in page source. This is a THIRD heatmap/session recording tool alongside Clarity and Hotjar. Major redundancy that adds unnecessary JavaScript and impacts page performance."
+    },
+    {
+      "name": "Globo Form Builder",
+      "category": "Forms",
+      "quality": "good",
+      "notes": "Detected via Shopify extension (globo.formbuilder). Used for contact forms and potentially the retailer application form."
+    },
+    {
+      "name": "Axon (Lifetimely)",
+      "category": "Analytics / LTV",
+      "quality": "good",
+      "notes": "Detected via Shopify extension (axon-shop-integration). Provides customer lifetime value analytics and cohort analysis."
+    }
+  ],
+  "missing_apps": [
+    {
+      "name": "Loyalty / Rewards Program",
+      "category": "Retention",
+      "priority": "recommended",
+      "impact_type": "retention",
+      "impact_label": "Increase repeat purchase rate by 15-25%",
+      "benchmark": "Smile.io or LoyaltyLion -- reward points for purchases, referrals, and social shares. Critical for a subscription brand to reduce churn and reward long-term customers."
+    },
+    {
+      "name": "Wishlist / Favorites",
+      "category": "Engagement",
+      "priority": "nice-to-have",
+      "impact_type": "conversion",
+      "impact_label": "Increase return visit conversion by 8-12%",
+      "benchmark": "Wishlist Plus or Swym -- allow customers to save products for later. Less critical for a single-product-category brand but useful as the catalog expands."
+    },
+    {
+      "name": "A/B Testing",
+      "category": "Optimization",
+      "priority": "recommended",
+      "impact_type": "conversion",
+      "impact_label": "Data-driven optimization can improve conversion by 10-20% over time",
+      "benchmark": "Google Optimize (free), VWO, or Convert -- essential for testing subscription vs one-time messaging, hero headlines, CTA copy, and pricing presentation."
+    },
+    {
+      "name": "Back-in-Stock Notifications",
+      "category": "Revenue Recovery",
+      "priority": "nice-to-have",
+      "impact_type": "revenue",
+      "impact_label": "Recover 5-10% of lost sales from stockouts",
+      "benchmark": "Back In Stock by Swym or Klaviyo's built-in back-in-stock flow -- capture email when items are unavailable and auto-notify when restocked."
+    },
+    {
+      "name": "Post-Purchase Upsell",
+      "category": "Revenue",
+      "priority": "recommended",
+      "impact_type": "revenue",
+      "impact_label": "Increase AOV by 10-15% via thank-you page offers",
+      "benchmark": "ReConvert or AfterSell -- post-purchase upsells for complementary products (waste bags, scoop, litter mat) on the thank-you page. Low friction since payment info is already captured."
+    }
+  ],
+  "present_count": 15,
+  "missing_count": 5,
+  "redundancies": [
+    {
+      "category": "Heatmaps & Session Recording",
+      "apps": ["Microsoft Clarity (free)", "Hotjar (paid)", "Lucky Orange (paid)"],
+      "recommendation": "Keep Microsoft Clarity (free, owned by Microsoft, lightweight) and remove Hotjar and Lucky Orange. Running 3 session recording tools is unnecessary and adds ~200KB+ of JavaScript. Estimated savings: $30-60/month in app costs plus measurable PageSpeed improvement."
+    },
+    {
+      "category": "GA4 Duplicate Tag",
+      "apps": ["G-B61K93NBE6 (active)", "G-000000 (placeholder)"],
+      "recommendation": "Remove the G-000000 placeholder GA4 tag. It generates unnecessary network requests and may cause data quality issues."
+    }
+  ],
+  "benchmark_context": "Catalyst Pet has a mature app stack (15 apps detected) with strong coverage across reviews (Yotpo), email marketing (Klaviyo), subscriptions (ReCharge), support (Gorgias), and multi-channel advertising (FB, TikTok, Pinterest, Triple Whale). The main concern is triple-redundancy in analytics (Clarity + Hotjar + Lucky Orange) which impacts page performance. The stack is appropriate for a Tier 2-3 D2C subscription brand with estimated monthly app spend of $400-600.",
+  "narrative": "Catalyst Pet's app ecosystem is well-established for a subscription-first D2C brand. The core stack of Yotpo (reviews) + Klaviyo (email) + ReCharge (subscriptions) + Gorgias (support) covers the essential customer lifecycle touchpoints. Multi-channel advertising is well-instrumented with Facebook Pixel, TikTok Pixel, Pinterest Tag, and Triple Whale for attribution. The critical issue is triple-redundancy in heatmap/session recording tools: Microsoft Clarity (free), Hotjar, and Lucky Orange all serve the same purpose. Removing two of these would save $30-60/month and reduce JavaScript bloat by ~200KB. Key missing capabilities include a loyalty/rewards program (important for reducing subscription churn), post-purchase upsells (to increase AOV on complementary products like waste bags), and A/B testing (essential for optimizing the subscription vs one-time messaging). Overall, the app infrastructure is solid but could be streamlined for better performance."
+}

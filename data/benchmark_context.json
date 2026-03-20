@@ -1,0 +1,202 @@
+{
+  "industry": "health_wellness",
+  "industry_note": "Pet Products — mapped to Health & Wellness (closest D2C consumables benchmark)",
+  "stores_analyzed": 10,
+  "standard_patterns": [
+    {
+      "pattern": "Health Benefit Hero Messaging",
+      "adoption": "10/10",
+      "page": "homepage",
+      "best_example": "Traya — quiz CTA + 3 quantified stats (10L+ Customers, 93% Saw results, 4.5 Google Rating)"
+    },
+    {
+      "pattern": "Trust Badge Bar",
+      "adoption": "9/10",
+      "page": "homepage",
+      "best_example": "Moon Juice — 6 badges: No Fillers, Bioavailable, 100% Traceable, Clinically Proven Potency, 3rd Party Tested, Vegan"
+    },
+    {
+      "pattern": "Ingredient Transparency",
+      "adoption": "9/10",
+      "page": "pdp",
+      "best_example": "Ritual — '9 Traceable Ingredients' with geographic origin per nutrient (e.g., Folate from Italy)"
+    },
+    {
+      "pattern": "Accordion/Collapsible PDP Sections",
+      "adoption": "9/10",
+      "page": "pdp",
+      "best_example": "Moon Juice — 5 tabs: Description, Benefits, How To Use, Ingredients, Sourcing"
+    },
+    {
+      "pattern": "Benefits Bullet List",
+      "adoption": "8/10",
+      "page": "pdp",
+      "best_example": "Moon Juice SuperYou — 7 specific benefits with asterisked quantified claims ('reduce cortisol by 24%*')"
+    },
+    {
+      "pattern": "Subscription/Auto-Ship Option",
+      "adoption": "8/10",
+      "page": "pdp",
+      "best_example": "Seed — $49.99/mo, '30-day supply delivered monthly. Pause or cancel anytime.' + 'Start Now' CTA"
+    },
+    {
+      "pattern": "Bestsellers Section on Homepage",
+      "adoption": "8/10",
+      "page": "homepage",
+      "best_example": "Moon Juice — concern-based CTAs (SHOP MOOD, SHOP FOCUS, SHOP RELAXATION) mapping product to outcome"
+    },
+    {
+      "pattern": "Certification Badges on PDP",
+      "adoption": "8/10",
+      "page": "pdp",
+      "best_example": "Wellbeing Nutrition — FSSAI + GMP + Made in India + Clinically Researched with icons near ATC"
+    }
+  ],
+  "growing_patterns": [
+    {
+      "pattern": "Concern-Based Navigation",
+      "adoption": "7/10",
+      "page": "homepage",
+      "best_example": "Onnit — concern categories as main nav (Cognition & Focus, Sleep Mood & Stress, Gut Health, Fitness)"
+    },
+    {
+      "pattern": "Product Cards with Star Ratings",
+      "adoption": "7/10",
+      "page": "collection",
+      "best_example": "Kapiva, Plix, Seed, Moon Juice, Onnit — rating + review count on every product card"
+    },
+    {
+      "pattern": "Dosage/Usage Instructions",
+      "adoption": "7/10",
+      "page": "pdp",
+      "best_example": "Kapiva, Plix, Wellbeing Nutrition, Dr. Vaidya's — timing guidance (morning/evening, with/without meal)"
+    },
+    {
+      "pattern": "Subscription Pricing on Homepage Cards",
+      "adoption": "6/10",
+      "page": "collection",
+      "best_example": "Moon Juice — 'From $38 ~~$54~~' subscription price shown at discovery stage (all 5 US stores do this)"
+    },
+    {
+      "pattern": "Clinical Study References",
+      "adoption": "6/10",
+      "page": "pdp",
+      "best_example": "Seed — 'View Clinical Trials' link on PDP leading to actual study summaries"
+    },
+    {
+      "pattern": "Subscription Pre-Selected on PDP",
+      "adoption": "6/10",
+      "page": "pdp",
+      "best_example": "All 5 US stores — subscription radio pre-checked by default with clear savings callout"
+    },
+    {
+      "pattern": "Free Shipping Bar/Threshold",
+      "adoption": "6/10",
+      "page": "homepage",
+      "best_example": "Onnit — clear $100 threshold in announcement bar; Moon Juice/Seed — free shipping on all subscriptions"
+    },
+    {
+      "pattern": "Pack-Duration Pricing",
+      "adoption": "5/10",
+      "page": "pdp",
+      "best_example": "Kapiva — per-day cost breakdown ('Only INR 33/day') reframes price as daily investment"
+    },
+    {
+      "pattern": "FAQ Accordion on PDP",
+      "adoption": "5/10",
+      "page": "pdp",
+      "best_example": "Kapiva, Wellbeing Nutrition, Moon Juice, The Nue Co. — 5-8 FAQs covering who/when/side effects/results timeline"
+    }
+  ],
+  "differentiator_patterns": [
+    {
+      "pattern": "Quiz/Assessment CTA",
+      "adoption": "4/10",
+      "page": "homepage",
+      "best_example": "Traya — quiz is THE primary CTA, entire homepage funnels to hair test"
+    },
+    {
+      "pattern": "Celebrity/Expert Endorsement",
+      "adoption": "3/10",
+      "page": "homepage",
+      "best_example": "Onnit — Joe Rogan as CO-FOUNDER (authentic stake, not just spokesperson)"
+    },
+    {
+      "pattern": "Before/After Results",
+      "adoption": "3/10",
+      "page": "homepage",
+      "best_example": "Traya — video before/after with 3-month/6-month progression markers"
+    },
+    {
+      "pattern": "HSA/FSA Eligible Badge",
+      "adoption": "2/10",
+      "page": "pdp",
+      "best_example": "Ritual — 'HSA/FSA eligible — Save an average of 30%' near ATC"
+    },
+    {
+      "pattern": "Refill/Sustainability Option",
+      "adoption": "1/10",
+      "page": "pdp",
+      "best_example": "Moon Juice — Bottle/Refill variant selector on PDP"
+    },
+    {
+      "pattern": "Emotion-Based Navigation",
+      "adoption": "1/10",
+      "page": "homepage",
+      "best_example": "The Nue Co. — browse by emotional state: Relax, Comfort, Connect, Energy, Grounding, Destress"
+    },
+    {
+      "pattern": "WhatsApp Integration",
+      "adoption": "1/10",
+      "page": "homepage",
+      "best_example": "Traya — WhatsApp icon in mobile header for consultation-based selling"
+    }
+  ],
+  "anti_patterns": [
+    {
+      "pattern": "Subscription-Only Without One-Time Purchase Option",
+      "impact": "Deters first-time buyers who want to try before committing — 3/5 US stores hide or remove one-time purchase path"
+    },
+    {
+      "pattern": "Email Popup on PDP",
+      "impact": "Interrupts purchase decision-making at the critical moment — delay to exit intent or limit to homepage only"
+    },
+    {
+      "pattern": "Non-Shopify Custom Platform",
+      "impact": "Limits CRO tool ecosystem — no standard Shopify apps for A/B testing, upsells, loyalty programs"
+    },
+    {
+      "pattern": "Dense Information Architecture on PDP",
+      "impact": "Information overload for first-time buyers — use progressive disclosure: benefits first, ingredient details in accordion"
+    }
+  ],
+  "us_specific_focus": [
+    "Subscription pre-selected with clear savings",
+    "Subscription pricing shown on collection cards (not just PDP)",
+    "Clinical study / sustainability references with specific data points",
+    "5+ trust badges (Non-GMO, Vegan, Third-Party Tested, Traceable, Clean Label)",
+    "Quiz/assessment CTA in navigation",
+    "Money-back guarantee prominently displayed",
+    "HSA/FSA eligibility badge near ATC (growing trend)",
+    "Free shipping on all subscriptions messaging"
+  ],
+  "pet_specific_adaptations": [
+    "Ingredient transparency → material sourcing transparency (wood fiber origin, renewable pine sourcing)",
+    "Health benefit hero → sustainability/eco benefit hero (odor control, biodegradable, carbon-neutral messaging)",
+    "Concern-based nav (Digestion, Immunity) → pet-type or product-type navigation (Cat Litter, Subscriptions, Why Catalyst)",
+    "Clinical studies → environmental impact data / third-party eco certifications (BPI Certified, carbon offset data)",
+    "Subscription pre-selected → auto-ship for consumable litter (monthly supply with pause/cancel anytime)",
+    "Per-day cost framing → per-bag or per-month cost framing vs clay litter comparison",
+    "FSSAI/GMP badges → Cruelty-Free, Biodegradable, BPI Certified, Sustainably Sourced trust badges",
+    "Before/after health results → before/after odor/cleanliness results or litter box transformation content",
+    "Quiz ('Find your supplement') → quiz ('Find your litter plan' — bag size, cat count, subscription cadence)",
+    "Benefits bullet list → eco impact bullets (e.g., '99% biodegradable, 7x lighter than clay, neutralizes odor in 5 seconds')"
+  ],
+  "funnel_benchmarks": {
+    "cvr": {"p25": "0.82%", "p50": "1.38%", "p75": "2.10%"},
+    "atc_rate": {"p25": "6.42%", "p50": "18.99%", "p75": "20.27%"},
+    "cart_to_checkout": {"p25": "22.8%", "p50": "23.2%", "p75": "40.5%"},
+    "checkout_completion": {"p25": "12.3%", "p50": "17.7%", "p75": "32.1%"},
+    "pdp_view_rate": {"p25": "60.4%", "p50": "71.6%", "p75": "115.9%"}
+  }
+}
