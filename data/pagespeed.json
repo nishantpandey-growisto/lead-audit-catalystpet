@@ -67,14 +67,6 @@
   },
   "competitors": [
     {
-      "name": "Pretty Litter",
-      "url": "https://prettylitter.com",
-      "mobile": null,
-      "desktop": null,
-      "crux": null,
-      "fetch_note": "Site returns 403 to PageSpeed Insights crawler (Netlify WAF block)"
-    },
-    {
       "name": "Tuft + Paw",
       "url": "https://tuftandpaw.com",
       "mobile": {
@@ -201,70 +193,6 @@
       }
     },
     {
-      "name": "Petco",
-      "url": "https://www.petco.com/shop/en/petcostore",
-      "mobile": {
-        "score": null,
-        "score_class": "score-cell-poor",
-        "fcp": "N/A",
-        "fcp_ms": null,
-        "fcp_class": "cwv-unknown",
-        "fcp_status": "unknown",
-        "lcp": "N/A",
-        "lcp_ms": null,
-        "lcp_class": "cwv-unknown",
-        "lcp_status": "unknown",
-        "tbt": "N/A",
-        "tbt_ms": null,
-        "tbt_class": "cwv-unknown",
-        "tbt_status": "unknown",
-        "cls": "0.443",
-        "cls_raw": 0.4433,
-        "cls_class": "cwv-fail",
-        "cls_status": "fail",
-        "si": "N/A",
-        "si_ms": null,
-        "inp": null
-      },
-      "desktop": {
-        "score": null,
-        "score_class": "score-cell-poor",
-        "fcp": "N/A",
-        "fcp_ms": null,
-        "fcp_class": "cwv-unknown",
-        "fcp_status": "unknown",
-        "lcp": "N/A",
-        "lcp_ms": null,
-        "lcp_class": "cwv-unknown",
-        "lcp_status": "unknown",
-        "tbt": "N/A",
-        "tbt_ms": null,
-        "tbt_class": "cwv-unknown",
-        "tbt_status": "unknown",
-        "cls": "0.465",
-        "cls_raw": 0.4654,
-        "cls_class": "cwv-fail",
-        "cls_status": "fail",
-        "si": "N/A",
-        "si_ms": null,
-        "inp": null
-      },
-      "crux": {
-        "overall": "AVERAGE",
-        "fcp_ms": 1451,
-        "fcp_category": "FAST",
-        "lcp_ms": 1668,
-        "lcp_category": "FAST",
-        "cls_score": 0,
-        "cls_category": "FAST",
-        "inp_ms": 289,
-        "inp_category": "AVERAGE",
-        "ttfb_ms": 1036,
-        "ttfb_category": "AVERAGE"
-      },
-      "fetch_note": "Lighthouse lab test blocked (403); CrUX field data available"
-    },
-    {
       "name": "PetSmart",
       "url": "https://www.petsmart.com",
       "mobile": {
@@ -328,7 +256,7 @@
       }
     }
   ],
-  "competition_table_html": "<tr class=\"client-row\"><td>Catalyst Pet (Client)</td><td class=\"score-cell-poor\">33</td><td class=\"score-cell-poor\">46</td><td class=\"score-cell-poor\">23.0s</td><td class=\"score-cell-good\">0</td><td class=\"score-cell-poor\">1,180ms</td></tr>\n<tr><td>Pretty Litter</td><td class=\"score-cell-poor\">Blocked</td><td class=\"score-cell-poor\">Blocked</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>\n<tr><td>Tuft + Paw</td><td class=\"score-cell-poor\">28</td><td class=\"score-cell-moderate\">62</td><td class=\"score-cell-poor\">7.0s</td><td class=\"score-cell-good\">0.005</td><td class=\"score-cell-poor\">3,330ms</td></tr>\n<tr><td>Open Farm</td><td class=\"score-cell-poor\">27</td><td class=\"score-cell-poor\">46</td><td class=\"score-cell-poor\">23.5s</td><td class=\"score-cell-good\">0.018</td><td class=\"score-cell-poor\">2,400ms</td></tr>\n<tr><td>Petco</td><td>N/A</td><td>N/A</td><td>N/A</td><td class=\"score-cell-poor\">0.443</td><td>N/A</td></tr>\n<tr><td>PetSmart</td><td class=\"score-cell-poor\">36</td><td class=\"score-cell-poor\">54</td><td class=\"score-cell-poor\">6.6s</td><td class=\"score-cell-good\">0.047</td><td class=\"score-cell-poor\">1,640ms</td></tr>",
+  "competition_table_html": "<tr class=\"client-row\"><td>Catalyst Pet (Client)</td><td class=\"score-cell-poor\">33</td><td class=\"score-cell-poor\">46</td><td class=\"score-cell-poor\">23.0s</td><td class=\"score-cell-good\">0</td><td class=\"score-cell-poor\">1,180ms</td></tr>\n<tr><td>Tuft + Paw</td><td class=\"score-cell-poor\">28</td><td class=\"score-cell-moderate\">62</td><td class=\"score-cell-poor\">7.0s</td><td class=\"score-cell-good\">0.005</td><td class=\"score-cell-poor\">3,330ms</td></tr>\n<tr><td>Open Farm</td><td class=\"score-cell-poor\">27</td><td class=\"score-cell-poor\">46</td><td class=\"score-cell-poor\">23.5s</td><td class=\"score-cell-good\">0.018</td><td class=\"score-cell-poor\">2,400ms</td></tr>\n<tr><td>PetSmart</td><td class=\"score-cell-poor\">36</td><td class=\"score-cell-poor\">54</td><td class=\"score-cell-poor\">6.6s</td><td class=\"score-cell-good\">0.047</td><td class=\"score-cell-poor\">1,640ms</td></tr>",
   "cwv_summary": {
     "pass_count": 2,
     "total": 5,
