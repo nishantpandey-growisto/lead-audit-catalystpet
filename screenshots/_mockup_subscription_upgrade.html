@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; width: 375px; }
+  .badge { background: #1b5e3b; color: #fff; text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 6px 0; }
+  .cart-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; background: #2d6b4a; color: #fff; }
+  .cart-header h2 { font-size: 16px; font-weight: 600; }
+  .cart-header .close { font-size: 20px; cursor: pointer; }
+  .free-ship { background: #f0fdf4; padding: 8px 12px; text-align: center; font-size: 13px; color: #166534; border-bottom: 1px solid #e5e7eb; }
+  .item { display: flex; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #f3f4f6; }
+  .item img { width: 64px; height: 64px; border-radius: 8px; background: #f3f4f6; object-fit: cover; }
+  .item-info { flex: 1; }
+  .item-name { font-size: 13px; font-weight: 600; color: #111; }
+  .item-variant { font-size: 12px; color: #6b7280; margin-top: 2px; }
+  .item-price { font-size: 14px; font-weight: 700; color: #111; margin-top: 4px; }
+
+  /* THE MOCKUP: Subscription upgrade banner */
+  .sub-upgrade {
+    margin: 12px 16px;
+    border: 2px solid #2d6b4a;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f0fdf4;
+  }
+  .sub-upgrade-header {
+    background: #2d6b4a;
+    color: #fff;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .sub-upgrade-header .icon { font-size: 18px; }
+  .sub-upgrade-body { padding: 14px; }
+  .sub-compare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .sub-option { text-align: center; flex: 1; }
+  .sub-option .label { font-size: 11px; color: #6b7280; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .sub-option .price { font-size: 20px; font-weight: 800; margin-top: 2px; }
+  .sub-option .per { font-size: 11px; color: #6b7280; }
+  .sub-option.current .price { color: #9ca3af; text-decoration: line-through; }
+  .sub-option.subscribe .price { color: #166534; }
+  .sub-arrow { font-size: 24px; color: #2d6b4a; font-weight: 700; padding: 0 8px; }
+  .save-badge {
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .sub-cta {
+    background: #2d6b4a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+  }
+  .sub-benefits { display: flex; justify-content: space-around; margin-top: 10px; }
+  .sub-benefit { text-align: center; font-size: 10px; color: #6b7280; }
+  .sub-benefit .emoji { font-size: 16px; display: block; margin-bottom: 2px; }
+
+  .subtotal { display: flex; justify-content: space-between; padding: 14px 16px; font-size: 15px; font-weight: 700; border-top: 1px solid #e5e7eb; }
+  .checkout-btn { background: #2d6b4a; color: #fff; border: none; padding: 14px; width: calc(100% - 32px); margin: 0 16px 16px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; letter-spacing: 0.5px; }
+</style>
+</head>
+<body>
+  <div class="badge">PROPOSED IMPLEMENTATION — CATALYST PET CART</div>
+  <div class="cart-header">
+    <h2>Your Cart <span style="font-weight:400; font-size:13px;">1 item</span></h2>
+    <span class="close">✕</span>
+  </div>
+  <div class="free-ship">🚚 You've qualified for <strong>Free Shipping!</strong></div>
+  <div class="item">
+    <div style="width:64px;height:64px;background:#e8f5e9;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#2d6b4a;font-weight:600;text-align:center;">Cat Litter<br>40lb</div>
+    <div class="item-info">
+      <div class="item-name">Cat Litter Healthy Cat</div>
+      <div class="item-variant">40lb · One-Time Purchase</div>
+      <div class="item-price">$49.40</div>
+    </div>
+  </div>
+
+  <!-- THE MOCKUP FEATURE -->
+  <div class="sub-upgrade">
+    <div class="sub-upgrade-header">
+      <span class="icon">🔄</span>
+      Switch to Subscribe & Save
+    </div>
+    <div class="sub-upgrade-body">
+      <div class="sub-compare">
+        <div class="sub-option current">
+          <div class="label">One-Time</div>
+          <div class="price">$49.40</div>
+          <div class="per">per delivery</div>
+        </div>
+        <div class="sub-arrow">→</div>
+        <div class="sub-option subscribe">
+          <div class="label">Subscribe</div>
+          <div class="price">$28.50</div>
+          <div class="per">per delivery</div>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <span class="save-badge">💰 Save 42% — $20.90 off every order</span>
+      </div>
+      <button class="sub-cta">Switch to Subscribe & Save</button>
+      <div class="sub-benefits">
+        <div class="sub-benefit"><span class="emoji">📦</span>Free shipping</div>
+        <div class="sub-benefit"><span class="emoji">⏸️</span>Pause anytime</div>
+        <div class="sub-benefit"><span class="emoji">❌</span>Cancel anytime</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subtotal">
+    <span>Subtotal</span>
+    <span>$49.40</span>
+  </div>
+  <button class="checkout-btn">CONTINUE TO CHECKOUT</button>
+</body>
+</html>

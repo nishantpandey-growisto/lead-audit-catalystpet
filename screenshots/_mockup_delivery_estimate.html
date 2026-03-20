@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; width: 375px; }
+  .badge { background: #1b5e3b; color: #fff; text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 6px 0; }
+  .cart-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; background: #2d6b4a; color: #fff; }
+  .cart-header h2 { font-size: 16px; font-weight: 600; }
+  .cart-header .close { font-size: 20px; cursor: pointer; }
+  .free-ship { background: #f0fdf4; padding: 8px 12px; text-align: center; font-size: 13px; color: #166534; border-bottom: 1px solid #e5e7eb; }
+  .item { display: flex; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #f3f4f6; }
+  .item-info { flex: 1; }
+  .item-name { font-size: 13px; font-weight: 600; color: #111; }
+  .item-variant { font-size: 12px; color: #6b7280; margin-top: 2px; }
+  .item-price { font-size: 14px; font-weight: 700; color: #111; margin-top: 4px; }
+
+  /* THE MOCKUP: Delivery estimate */
+  .delivery-estimate {
+    margin: 12px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .delivery-header {
+    background: #f8fafc;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .delivery-header .icon { font-size: 18px; }
+  .delivery-body { padding: 14px; }
+  .delivery-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .delivery-row:last-child { border-bottom: none; }
+  .delivery-row .left { display: flex; align-items: center; gap: 10px; }
+  .delivery-row .emoji { font-size: 20px; }
+  .delivery-row .label { font-size: 13px; font-weight: 600; color: #111; }
+  .delivery-row .sublabel { font-size: 11px; color: #6b7280; margin-top: 1px; }
+  .delivery-row .date {
+    font-size: 13px;
+    font-weight: 700;
+    color: #166534;
+    background: #f0fdf4;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  .delivery-row .free-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #166534;
+    background: #dcfce7;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+
+  .subtotal { display: flex; justify-content: space-between; padding: 14px 16px; font-size: 15px; font-weight: 700; border-top: 1px solid #e5e7eb; }
+  .checkout-btn { background: #2d6b4a; color: #fff; border: none; padding: 14px; width: calc(100% - 32px); margin: 0 16px 8px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; letter-spacing: 0.5px; }
+  .trust-row { display: flex; justify-content: center; gap: 16px; padding: 8px 16px 16px; }
+  .trust-item { font-size: 10px; color: #6b7280; display: flex; align-items: center; gap: 4px; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="badge">PROPOSED IMPLEMENTATION — CATALYST PET CART</div>
+  <div class="cart-header">
+    <h2>Your Cart <span style="font-weight:400; font-size:13px;">1 item</span></h2>
+    <span class="close">✕</span>
+  </div>
+  <div class="free-ship">🚚 You've qualified for <strong>Free Shipping!</strong></div>
+  <div class="item">
+    <div style="width:64px;height:64px;background:#e8f5e9;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#2d6b4a;font-weight:600;text-align:center;">Cat Litter<br>40lb</div>
+    <div class="item-info">
+      <div class="item-name">Cat Litter Healthy Cat</div>
+      <div class="item-variant">Subscription · 40lb · Every 4 Months</div>
+      <div class="item-price">$49.40</div>
+    </div>
+  </div>
+
+  <!-- THE MOCKUP FEATURE -->
+  <div class="delivery-estimate">
+    <div class="delivery-header">
+      <span class="icon">📦</span>
+      Estimated Delivery
+    </div>
+    <div class="delivery-body">
+      <div class="delivery-row">
+        <div class="left">
+          <span class="emoji">🚚</span>
+          <div>
+            <div class="label">Standard Shipping</div>
+            <div class="sublabel">USPS Ground Advantage</div>
+          </div>
+        </div>
+        <div>
+          <span class="date">Mar 25–27</span>
+          <span class="free-tag">FREE</span>
+        </div>
+      </div>
+      <div class="delivery-row">
+        <div class="left">
+          <span class="emoji">⚡</span>
+          <div>
+            <div class="label">Express Shipping</div>
+            <div class="sublabel">USPS Priority · 1-2 days</div>
+          </div>
+        </div>
+        <div>
+          <span class="date">Mar 22–23</span>
+          <span style="font-size:12px; font-weight:700; color:#6b7280;">+$8.99</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subtotal">
+    <span>Subtotal</span>
+    <span>$49.40</span>
+  </div>
+  <button class="checkout-btn">CONTINUE TO CHECKOUT</button>
+  <div class="trust-row">
+    <div class="trust-item">🇺🇸 Made in America</div>
+    <div class="trust-item">🐾 Donations to Shelters</div>
+    <div class="trust-item">♻️ Biodegradable</div>
+  </div>
+</body>
+</html>

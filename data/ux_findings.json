@@ -361,8 +361,8 @@
         "pattern_type": "growing",
         "client_screenshot": "screenshots/cart_modal_client.jpeg",
         "client_label": "Catalyst Pet -- Cart with Cross-Sells",
-        "benchmark_screenshot": null,
-        "benchmark_label": null,
+        "benchmark_screenshot": "screenshots/mockup_subscription_upgrade.jpeg",
+        "benchmark_label": "Proposed Implementation -- Subscribe & Save Upgrade",
         "observations": [
           "The cart drawer shows 'You May Also Like' cross-sell products (Biodegradable Pet Waste Bags, Starter Pack) which is good",
           "However, there is no prompt to upgrade a one-time purchase to a subscription with savings callout",
@@ -384,8 +384,8 @@
         "pattern_type": "growing",
         "client_screenshot": "screenshots/cart_modal_client.jpeg",
         "client_label": "Catalyst Pet -- Cart (No Delivery Estimate)",
-        "benchmark_screenshot": null,
-        "benchmark_label": null,
+        "benchmark_screenshot": "screenshots/mockup_delivery_estimate.jpeg",
+        "benchmark_label": "Proposed Implementation -- Delivery Estimates",
         "observations": [
           "The cart drawer shows subtotal and free shipping qualification but no estimated delivery date or shipping speed information",
           "For a consumable product like cat litter, knowing delivery timing is critical -- customers may be running low and need to plan",
