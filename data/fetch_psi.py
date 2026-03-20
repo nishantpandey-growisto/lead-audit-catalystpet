@@ -4,8 +4,9 @@ import json
 import urllib.request
 import urllib.parse
 import sys
+import os
 
-KEY = "***REDACTED_API_KEY***"
+KEY = os.environ.get("PAGESPEED_API_KEY", "")
 
 URLS = {
     "client": "https://catalystpet.com",

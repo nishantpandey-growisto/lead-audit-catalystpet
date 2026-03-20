@@ -16,7 +16,7 @@
     {"name": "Petco", "url": "www.petco.com/shop/en/petcostore"},
     {"name": "PetSmart", "url": "www.petsmart.com"}
   ],
-  "pagespeed_api_key": "***REDACTED_API_KEY***",
+  "pagespeed_api_key": "SET_VIA_ENV_PAGESPEED_API_KEY",
   "feedback_rules": [
     "Verify popups in incognito: wait 30+ sec, scroll, exit-intent test",
     "Test cart features with items in cart, never empty",
